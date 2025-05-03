@@ -1,8 +1,9 @@
 {
   "name": "Hub",
   "short_name": "Hub",
-  "theme_color": "#2196f3",
-  "background_color": "#2196f3",
+  "theme_color": "#000",
+  "background_color": "#000",
   "display": "fullscreen",
+  "scope": "https://elastickerb3.github.io/Quiz",
   "start_url": "https://elastickerb3.github.io/Hub/"
 }
