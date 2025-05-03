@@ -4,6 +4,5 @@
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "fullscreen",
-  "scope": "elastickerb3.github.io/Hub",
-  "start_url": "elastickerb3.github.io/Hub/index.html"
+  "start_url": "https://elastickerb3.github.io/Hub/"
 }
