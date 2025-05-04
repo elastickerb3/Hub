@@ -4,20 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hub</title>
+    <script src="./Quiz/script.js" defer></script>
+    <script src="./Quiz/Fertig.js" defer></script>
+    <script src="./Quiz/Erklären.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <h1>Alle Projekte</h1>
-    <a href="./Quiz/manifest.json"><img src="./assets/Quiz.png" alt="Quiz"></a>
-    <style>
-        img{
-            height: 200px;
-        }
-        html{
-            size: 100%;
-            margin: 0%;
-            background-image: linear-gradient(to right, red, blue);
-        }
-    </style>
+    <div id="Start">
+        <h1>Alle Projekte</h1>
+        <button onclick="document.getElementById('Quiz').style = 'display:block;'; document.getElementById('Start').style = 'display:none;'"><img src="./assets/Quiz.png" alt="Quiz"></button>
+    </div>
+    <div id="Quiz" style="display: none;">
+        <div class="Quiz1">
+        <header>
+            <h1 class="Quiz">Quiz</h1>
+        </header>
+        <h1 class="level" style="text-decoration: underline;">Du bist in Frage nummer 1 / 120</h1>
+        <h1 class="punkte" style="text-decoration:underline ;">Du hast 0 / 0 Punkte</h1>
+        <h1 class="Frage" style="text-decoration: underline;">Das schnellste Landtier der Erde, der GEpard, kommt auf</h1>
+        <br>
+        <button id="Button" class="A falsch" onclick="QuisAuswertung(false)">
+            <h1>A. 80 km h.</h1>
+        </button>
+        <br>
+        <button id="Button" class="B falsch" onclick="QuisAuswertung(false)">
+            <h1>B. 90 km h.</h1>
+        </button>
+        <br>
+        <button id="Button" class="C richtig" onclick="QuisAuswertung(true)">
+            <h1>C. 110 km h.</h1>
+        </button>
+        </div>
+        <div class="Quiz2" style="display: none;">
+            <h1 class="Erklärung"></h1>
+            <br>
+            <button id="Button" onclick="Weiter()"><h1>Weiter</h1></button>
+        </div>
+        <div class="Quiz3" style="display: none;">
+            <button onclick="Nochmal()"><h1>Nochmal</h1></button>
+            <button onclick="Hub()"><h1>Zum Hub</h1></button>
+        </div>
+    </div>
 </body>
 </html>
