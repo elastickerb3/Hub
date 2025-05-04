@@ -1,0 +1,23 @@
+img{
+    height: 200px;
+}
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    background-image: linear-gradient(to right, red, blue);
+}
+button{
+    background: transparent;
+    border: none;
+}
+.Quiz{
+    text-decoration: underline;
+}
+#Button{
+    border:solid;
+    border-color: blue;
+}
+h1{
+    font-size: 40px;
+}
