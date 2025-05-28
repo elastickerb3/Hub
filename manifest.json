@@ -3,7 +3,7 @@
   "short_name": "Hub",
   "theme_color": "#000",
   "background_color": "#000",
-  "display": "fullscreen",
-  "scope": "/",
-  "start_url": "/"
+  "display": "standalon",
+  "scope": "/Hub",
+  "start_url": "/Hub"
 }
