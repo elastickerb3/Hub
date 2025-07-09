@@ -11,6 +11,9 @@ button{
     background: transparent;
     border: none;
 }
+#Button :click{
+    backround:white;
+}
 .Quiz{
     text-decoration: underline;
 }
