@@ -1032,9 +1032,11 @@ async function QuisAuswertung(Richtig) {
     richtig.style = ""
     FragenAntwortenUndCo()
     document.querySelector(".Quiz1").style = "display: none;"
-    if(level-1==maxlevel){
-        FertigPunkte()
-    }
     document.querySelector(".Quiz2").style = "display: block;"
     Erklären()
+    
+    if(level-1>=maxlevel){
+        console.log("Fertig")
+        FertigPunkte()
+    }
 }
