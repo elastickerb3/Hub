@@ -1007,14 +1007,26 @@ if(level-1 == 119){
     )
 }
 }
+
+function UpdateLevelAndPoints() {
+    levelFeld.innerHTML = "Du bist in Frage nummer " + level + " / " + maxlevel
+    punkteFeld.innerHTML = "Du hast " + Punkte + " / " + (level - 1) + " Punkte"
+}
+
 async function QuisAuswertung(Richtig) {
     let richtig = document.querySelector(".richtig");
     level++;
     if (Richtig) {
         Punkte++
     }
-    levelFeld.innerHTML = "Du bist in Frage nummer " + level + " / " + maxlevel
-    punkteFeld.innerHTML = "Du hast " + Punkte + " / " + (level - 1) + " Punkte"
+    UpdateLevelAndPoints()
+    if(level-1<Punkte){
+        document.querySelector(".Quiz1").style = "display: none;"
+        document.querySelector(".Quiz2").style = "display: none;"
+        document.querySelector(".Quiz3").style = "display: none;"
+        document.querySelector(".Cheated").style = "display: block;"
+        return
+    }
     richtig.style = "background: lime;";
     await sleep(1)
     richtig.style = ""

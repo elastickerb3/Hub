@@ -6,11 +6,16 @@ function Hub(){
     level = 1;
     Punkte = 0;
     document.querySelector("#Quiz").style = "display:none;";
+    document.querySelector(".Cheated").style = "display:none;";
+    document.querySelector(".Quiz1").style = "display:block;";
     document.querySelector("#Start").style = "display:block;";
+    UpdateLevelAndPoints();
 }
 function Nochmal(){
     level = 1;
     Punkte = 0;
-    document.querySelector("#Quiz3").style = "display:none;";
-    document.querySelector("#Quiz1").style = "display:block;";
+    document.querySelector(".Quiz3").style = "display:none;";
+    document.querySelector(".Cheated").style = "display:none;";
+    document.querySelector(".Quiz1").style = "display:block;";
+    UpdateLevelAndPoints()
 }
