@@ -7,22 +7,23 @@
     <script src="./Quiz/script.js" defer></script>
     <script src="./Quiz/Fertig.js" defer></script>
     <script src="./Quiz/Erklären.js" defer></script>
+    <script src="./trail.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
     <div id="Start">
         <h1>Alle Projekte</h1>
-        <button onclick="document.getElementById('Quiz').style = 'display:block;'; document.getElementById('Start').style = 'display:none;'"><img src="./assets/Quiz.png" alt="Quiz"></button>
+        <button onclick="document.getElementById('Quiz').style = 'display:block;'; document.getElementById('Start').style = 'display:none;'"><h1>Quiz</h1></button>
     </div>
     <div id="Quiz" style="display: none;">
         <div class="Quiz1">
         <header>
-            <h1 class="Quiz">Quiz</h1>
+            <h1>Quiz</h1>
         </header>
-        <h1 class="level" style="text-decoration: underline;">Du bist in Frage nummer 1 / 120</h1>
-        <h1 class="punkte" style="text-decoration:underline ;">Du hast 0 / 0 Punkte</h1>
-        <h1 class="Frage" style="text-decoration: underline;">Das schnellste Landtier der Erde, der Gepard, kommt auf</h1>
+        <h1 class="level">Du bist in Frage nummer 1 / 120</h1>
+        <h1 class="punkte">Du hast 0 / 0 Punkte</h1>
+        <h1 class="Frage">Das schnellste Landtier der Erde, der Gepard, kommt auf</h1>
         <br>
         <button id="Button" class="A falsch" onclick="QuisAuswertung(false)">
             <h1>A. 80 km h.</h1>
@@ -45,6 +46,11 @@
             <button onclick="Nochmal()"><h1>Nochmal</h1></button>
             <button onclick="Hub()"><h1>Zum Hub</h1></button>
         </div>
+        <div class="Cheated" style="display: none;">
+            <h1>Du hast geschummelt!</h1>
+            <button onclick="Hub()"><h1>Zum Hub</h1></button>
+        </div>
     </div>
+    
 </body>
 </html>
